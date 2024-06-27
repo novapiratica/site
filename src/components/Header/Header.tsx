@@ -9,9 +9,9 @@ export interface HeaderProps {
 }
 
 export function Header(props: HeaderProps) {
-    const {
+    const {/*
         navLinks
-    } = props;
+    */} = props;
     const {toggleDrawer, isOpen} = useDrawer();
     return (
         <header className={'Header'}>
@@ -20,7 +20,7 @@ export function Header(props: HeaderProps) {
                     <img src={image.src} alt={'Nova Piratica'}/>
                 </span>
             </Link>
-            <Nav navLinks={navLinks} />
+            {/*<Nav navLinks={navLinks} />*/}
             <span className="Drawer-button">
                 <button className="Menu-icon-button" onClick={() => toggleDrawer()}>
                     <span className="Menu-icon">
